@@ -12,7 +12,11 @@ Unless there is not enough FreeRTOS heap memory available, the scheduler functio
 
 Build instructions:
 
-1. `cd 01_SingleTask`
-2. `cmake ..`
-3. `make all`
-4. Flash the generate uf2 to the Pico board.
+```
+cd 01_SingleTask
+mkdir build
+cd build
+cmake ..
+make all
+Flash the generate uf2 to the Pico board
+```
