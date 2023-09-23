@@ -16,8 +16,8 @@ Flash the generate uf2 to the Pico board
 
 The timeout can be specified when calling cmake and giving this additional parameter:
 ```
-    cmake .. -DMAX_WAIT_TIME_MS=600
-    make all
+cmake .. -DMAX_WAIT_TIME_MS=600
+make all
 ```
 
 - When **MAX_WAIT_TIME_MS** > 500ms, you should see one print from **taskDelay** saying that the delay is completed, and a second trace from **taskToggleLed** indicating that the LED toggled.
