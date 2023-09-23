@@ -3,7 +3,18 @@
 With this example, I want to demostrate how 2 task can communicate. In this particular case, one task notifies anotherone when an event occurred.
 **taskDelay** will wait for 500ms to pass, then it will notify **taskToggleLed** that the time expired. **taskToggleLed** is waiting for a notification. When the notification arrives, it will toggle the LED, otherwise it will print a timeout wearning.
 
-The timeout can be specified when building the example:
+Build instructions:
+
+```
+cd 01_SingleTask
+mkdir build
+cd build
+cmake ..
+make all
+Flash the generate uf2 to the Pico board
+```
+
+The timeout can be specified when calling cmake and giving this additional parameter:
 ```
     cmake .. -DMAX_WAIT_TIME_MS=600
     make all
