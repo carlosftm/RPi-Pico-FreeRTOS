@@ -9,3 +9,10 @@ The **taskToggleLed** toggles the LED and then it is suspended for 500ms when ca
 The primary function of the scheduler is to manage the execution of tasks or threads in a multitasking environment.
 The scheduler determines which task should run at any given time based on predefined scheduling policies.
 Unless there is not enough FreeRTOS heap memory available, the scheduler function wiull not return.
+
+Build instructions:
+
+1. `cd 01_SingleTask`
+2. `cmake ..`
+3. `make all`
+4. Flash the generate uf2 to the Pico board.
