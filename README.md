@@ -1,7 +1,7 @@
 # RPi-Pico-FreeRTOS
 
 Sample code using FreeRTOS on the Raspberry Pi Pico (RP2040).
-The code make use of the pico-sdk. 
+The code makes use of the pico-sdk. 
 
 FreeRTOS was added to the repository as a submodule.
 Pico-SDK must be pre-installed on your machine.
@@ -11,6 +11,11 @@ Pico-SDK must be pre-installed on your machine.
 1. Clone the repository
    ```
    git clone https://github.com/carlosftm/RPi-Pico-FreeRTOS.git --recurse-submodules
+   ```
+   or
+   ```
+   git clone https://github.com/carlosftm/RPi-Pico-FreeRTOS.git
+   git submodule update --init --recursive
    ```
   
 2. set the following 2 enviroment variables (adapt the path to the pico-sdk according to your setup)
