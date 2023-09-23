@@ -10,7 +10,11 @@ When the GPIO0 get a +3.3V pulse, the **gpioIsr()** is called. This function, as
 
 Build instructions:
 
-1. `cd 02_GpioIrq`
-2. `cmake ..`
-3. `make all`
-4. Flash the generate uf2 to the Pico board.
+```
+cd 02_GpioIrq
+mkdir build
+cd build
+cmake ..
+make all
+Flash the generate uf2 to the Pico board
+```
