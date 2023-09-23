@@ -29,7 +29,8 @@ void main( void )
     gpio_init( PICO_DEFAULT_LED_PIN );
     gpio_set_dir( PICO_DEFAULT_LED_PIN, GPIO_OUT );
 
-    printf( "Hola");
+    sleep_ms(1000);
+    printf( "[ Single Task ] \n\n\r");
     xTaskCreate( taskToggleLed, "Toggle_LED", 256, NULL, 1, NULL );
     vTaskStartScheduler( );
     while( 1 );

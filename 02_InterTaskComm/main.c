@@ -55,6 +55,7 @@ void main( void )
     gpio_init( PICO_DEFAULT_LED_PIN );
     gpio_set_dir( PICO_DEFAULT_LED_PIN, GPIO_OUT );
 
+    sleep_ms(1000);
     printf( "[ Inter Task Communication ]\n\n\r");
     xTaskCreate( taskToggleLed, "Toggle_LED", 256, NULL, 1, &handleTaskToggleLed );
     xTaskCreate( taskDelay,     "Delay",      256, NULL, 1, NULL );
