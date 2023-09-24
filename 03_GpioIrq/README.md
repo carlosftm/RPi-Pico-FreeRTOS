@@ -1,4 +1,4 @@
-# GPIO IRQ
+# 03. GPIO IRQ
 
 Let's have a look on how work with IRQ and ISR on FreeRTOS.
 

@@ -1,4 +1,4 @@
-# Queues
+# 04. Queues
 
 In FreeRTOS, a queue is a fundamental synchronization and communication mechanism used for inter-task communication. It allows tasks to send and receive data items in a thread-safe manner. Queues are commonly used in real-time systems to pass messages, events, or data between tasks.
 

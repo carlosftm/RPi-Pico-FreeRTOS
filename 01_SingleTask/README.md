@@ -1,4 +1,4 @@
-# Single Task
+# 01. Single Task
 
 This is the first example of the series. It is basically an introduction to FreeRTOS.
 
